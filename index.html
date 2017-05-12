@@ -8,6 +8,8 @@
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
+
+
     @font-face {
       font-family: 'Economica';
       font-style: normal;
@@ -24,10 +26,23 @@
           font-family: "Economica";
       }
 
-      body { 
+      body {
         color: #2C2E26;
       }
-      
+
+      .remark-notes-area, .remark-slide-container, .remark-slide-scaler, body {
+        background-color: black !important;
+        box-shadow: none !important;
+      }
+
+      .remark-notes-area, .remark-notes * {
+        color: white !important;
+      }
+
+      .end {
+        background-color: black;
+      }
+
       h1, h2, h3 {
         font-weight: normal;
         text-transform: uppercase;
@@ -45,12 +60,12 @@
       }
 
       h2 {
-       font-size: 3.5em !important; 
+       font-size: 3.5em !important;
        margin: 0;
       }
 
       h3 {
-       font-size: 2em !important;  
+       font-size: 2em !important;
       }
 
       .strike {
@@ -110,7 +125,7 @@
 
       .r50 {
         width: 50%; float: right;
-      }      
+      }
 
       .fullscreen {
         background-size: 100%;
@@ -128,7 +143,7 @@
 
 
 
-    .splash { 
+    .splash {
         font-weight: bold;
         position: absolute;
         right: 1.5em;
@@ -171,9 +186,8 @@ class: bulls, invert, right, fullscreen
 background-image: url(meetjohnny.png)
 # **Johnny**
 ???
-- Regular guy like most us
-- Java Dev at Shmi.ti.ko (small software house)
-- 5+ years of experience, previosly at Baccenture, Gizma and Revolution Gaming.
+- Regular Java Dev at PAMPAM.
+- 5+ years of experience
 - works full-time, has decent salary
 - prays software craftsmanship god.
 - Johnny has a boss...
@@ -183,7 +197,7 @@ class: fullscreen, invert, right
 background-image: url(meetmilton.png)
 # **Milton**
 ???
-- PM at Shmi.ti.ko
+- PM at PAMPAM
 - Reports directly to top management
 - haven't ever wrote a line of code
 - doesn't give a shit about craftsmanship.
@@ -201,64 +215,66 @@ class: invert, center, middle, fullscreen
 background-image:url(pleasing.png)
 ???
 
-- This year we do not have budget. We will give you an iPhone instead.
-- Sounds familiar?
+- This year we do not have budget. Take a corporate life insurance.
 - Feeling sad and undervalued, Johnny goes to his mentor Lawrence.
 
 ---
 class: fullscreen, invert
 background-image:url(lawrence.jpg)
-## **Lawrence** 
-### Retired Golang software architect
+## **Lawrence**
+### Retired Kotlin software architect
 ???
 - I am going to leave.
 - What did you tell your boss?
 
 ---
 class: center, middle
-## I know TDD, BDD, DDD and how to re-factor говноcode on a daily basis. I know a plenty of great frameworks like Spock and Spark, as well as Machine Learning and Microkernels.
+## I know TDD, BDD, DDD and how to re-factor **govno-kod** on a daily basis. I know a plenty of great frameworks like Spock and Spark, as well as Machine Learning and Unikernels.
 
 ---
 class: fullscreen, invert, center, middle
 background-image:url(lawrence.jpg)
 ???
 - DO USE IT TO BRING CUSTOMER VALUE???
-- management perspectice - UNUSED skills are waste.
+- management perspectice - **UNUSED skills are waste.**
 - Milton doesn’t let me
-- What Milton suggests you to use instead? 
-- **HHDD**. WTF? - It's very popular in our company.
+- What Milton suggests you to use instead?
+- **DDD**. WTF? - It's very popular in our company.
 
 ---
 class: center, middle
-## **Hujak-Hujak Driven Development**
-![](noarchitecture.png)
-![](hujakprod.jpeg)
-![](hujakarchitecture.png)
+## **DDD – Russian: Davai-Davai Deploy **
+![](lceOAtI.jpg)
+![](Ce-B2sgXEAAqTQ_.jpg)
+![](fawRchq.jpg)
+???
+just deploy this shit already
 
 ---
 class: fullscreen
 background-image:url(lawrence.jpg)
 ???
-- The good things about most engineering practices that they are personal. 
-- No need to convince anyone rather than you. 
-- If you know they they are necessary to delight the customer - go ahead. 
-- Surgeons.
-- Even those who work in healthcare or in the same building :) YOU ARE NOT SURGEON.
+- The good things about most engineering practices that they are personal.
+- No need to convince anyone rather than you.
+- If that's something that make you confident, efficient and customer happy – just do it!
+- Surgeons
+- YOU ARE NOT SURGEON.
 
 ---
 class: injury
 background-image:url(avoidinjury.png)
+???
+that's my job, that's my craft. Do whateve you know is right to delight your customer...
 
 ---
 class: fullscreen, invert, center, middle
 background-image:url(lawrence.jpg)
 # You don't need anyone's permission to be professional.
 ???
-- Do whatever you know is right to delight the customer
-- The people who are paying you to be a software developer are depending on you to know what you’re doing.
-- I had a manager in UK, TDD is waste of time. I said to him - now write this code w/o TDD and see who is faster.
-- Don't accept other people's dogmatic views. Ask for proof. Be ready to proove your assumptions.
-- What about things that require permission and go against boss' beliefs?
+- People pay you because you know what you are doing.
+- UK story.
+- Don't accept other people's dogmatic views. Ask for proof.
+- What about things that require permission and go against boss' / PO beliefs?
 - Do not delight your boss. Delight your customers.
 - Look:
 
@@ -266,33 +282,34 @@ background-image:url(lawrence.jpg)
 class: money
 # $ $ $ $ $ $ $
 ## ↓ Customers
-## ↓ Top Management 
-## ↓ Milton 
-## &nbsp; &nbsp; Johnny 
+## ↓ Top Management
+## ↓ Milton
+## &nbsp; &nbsp; Johnny
 ???
 - Here's how money goes into Johnny's pocket
-- Who is stronger than Milton? Customer! Boss of all bosses. 
+- Who is stronger than Milton? Customer! Boss of all bosses.
 - Whatever customer things right is right.
-- Instead of pumping money from Milton (limited budget), Bring money to the company. 
+- Instead of pumping money from Milton (limited budget), Bring money to the company.
 - **if you do not understand how your company makes money, it will cost you a lot**
 
 ---
 class: center, middle
 # Let customer judge
 ???
-- What's important and what's not. 
-- Make your reasoning public 
+- What's important and what's not.
+- Make your reasoning public
 - ** customer, what do you think if we...
-- ** hey, our rivals are doing this and that... 
+- ** hey, our rivals are doing this and that...
 - ** hey, check out what I've build. It allows us... Do you like it?
+- opportunity cost. You cost company money!
 
 ---
 class: center, middle
 # Speak customer language
 ???
 - High quality software = Increased lifespan and better ROI.
-- Why Scrum sells that well? IT'S CLEAR HOW TO START.
-- RESISTENCE. SELL SMALLER CHANGES.
+- // Why Scrum sells that well? IT'S CLEAR HOW TO START.
+- // RESISTENCE. SELL SMALLER CHANGES.
 ---
 class: center, middle
 # Don't be jerk
@@ -305,35 +322,35 @@ class: fullscreen
 background-image: url(meetjohnny.png)
 ???
 - Johnny folowed the advice and started selling diretly to the customer.
-- TDD. Because him faster and more confident. Not others. Feel the difference.
-- Natural course of selling practices to the team.
+// - TDD. Because him faster and more confident. Not others. Feel the difference.
+// - Natural course of selling practices to the team.
 
 ---
 class: center, middle, fullscreen
 background-image:url(qamanager.jpg)
 ???
-- "Not everyone is like that" - Johnny's "DONE" always works. "Quick improvements without breaking".
-- Customer asks that the most-critical parts of the system are developer by Johnny
+- QA manager is praising Johnny – done means done, quick adjustments w/o breaking things.
 
 ---
 class: fullscreen
 background-image:url(unicorn.png)
 ???
-- Same day, customer praises Johhnny to top management as the most proactive guy. Never heard that many ideas from Milton.
-- Johnny's Deployment automation plan will likely help in their new 1B Unicorn project.
+- Customer want Johnny to work on 1B unicorn project because Johnny rocks!
 
 ---
 class: fullscreen
 background-image:url(bobs.jpg)
+???
+
 
 ---
 class: invert, center, middle, bg1, fullscreen
 background-image:url(bobs.jpg)
-# Milton, is Johnny happy? 
+# Milton, is Johnny happy?
 ???
-- By doing what HE knows is right AND selling directly to the customer.
-- He became VIP, "exceptions to the rule". 
-- Companies do not want to lose someone who makes money. 
+- By doing things HE belifes and by selling directly to customer
+- He became VIP, "exceptions to the rule".
+- Companies do not want to lose someone who brings money/will bring/good rel. with customers.
 
 ---
 class: center, middle
@@ -381,7 +398,6 @@ background-image:url(boss.jpg)
 ???
 - A lot of negative feedback during annual performance review
 - Actually, your resulte the worsts among team members.
-- Fix the problem and come back next year. I will give you a corporate mobile phone.
 
 ---
 class: fullscreen
@@ -394,18 +410,16 @@ HOW CAN IS IT POSSIBLE?
 class: fullscreen
 background-image:url(fuckmilton.png)
 ???
-you will never be a Full-Stack Senior Java Developer, I knew that
+you will never be a Full-Stack Senior Scala Developer, I knew that
 
 ---
 class: fullscreen
 background-image:url(lawrence.jpg)
 ???
-- side-effect: The more successful you become - jerk and mushroom. 
+- success is a bitch!
+- side-effect: The more successful you become - jerk and mushroom.
+- ego-centric nature - envy. TURN EGOCENTRIC NATURE TO WORK FOR YOU.
 - Why people should support you? What it is for others in your success?
-- You never win a war with a one-man army. Your army is your fan club. You build fan club by thinking about
-- OTHERS STAKE IN YOUR SUCCESS. Ego-centric nature will work for you.
-- Election / Everyone is stealign! :-)
-
 - Did Johnny do something that make others interested in supporting him in future? MACBOOK
 
 ---
@@ -413,45 +427,31 @@ class: center, middle, invert, fullscreen
 background-image:url(lawrence.jpg)
 # You succeed faster by helping people around succeed.
 ???
-- Running and screaming gives you NEGATIVE IMAGE.
 - Instead of focusing on yourself, focus on others!
-- PageRank: The more people refer to you, the more authority you get. Authorith growth.
-- No matter how great content you write, if no one refers to you... You will have great good content, but 0 authority.
+- PageRank
 
 ---
 class: center, middle
 # Help peers achieve their career aspirations
 ???
 - Do you know what are your colleague’s career aspirations??? Do you know yours??? 😃 What about your manager?
-- Mentor your peers. Especially juniors. IT grows fast, juniors will become your customers. It happened in my life.
+- Mentor juniors. They grow so fast and are becoming your managers, customers very quickly.
 
 ---
 class: center, middle
 # When you succeed, it is team's success.
 ## When you fail - it's your failure.
 ???
-- Great idea? Team's idea! Want to praise yourself? Praise team!
-- Do not hide your failures behind the team. 
-- I FAILED AND IF I FAIL NEXT TIME, IT WILL BE DIFFERENT FAILURE BECAUSE I LEARNED FROM IT. 
+- DOUBLE CREDIT for saying – it's TEAMS idea or Tom's idea
+- I FAILED AND IF I FAIL NEXT TIME, IT WILL BE DIFFERENT FAILURE BECAUSE I LEARNED FROM IT.
 - ALL MY FAILURES ARE UNIQUE.
-
----
-class: fullscreen
-background-image: url(meetjohnny.png)
-???
-- He started doing pair programming.
-- He suggested reading, shared blogs and great articles. He led internal hackatons, brown bag sessions and lean coffee sessions.
-- When finished "his tasks first", he didn't scream and tell everyone. He silently helped others.
 
 ---
 class: fullscreen
 background-image: url(johnnyboard.png)
 ???
-- You know Johnny, we are happy to have you here. 
-- You are team is the most performing in the company. Customers are so happy.
-- We need more teams like yours. Now you are **Chief Software Architect** and will work with many teams at the same time (the most senior technical guy in the company).
-- How do you call it in craftsmanship slang? community of... 
-- Exactly Johnny, community of managers! Go ahead!
+- You know Johnny, you are doing great job. Your team is now the best in the company.
+- We need more teams like yours. Now you are **Chief Software Architect**.
 
 ---
 class: invert, left, bottom, fullscreen
@@ -459,8 +459,7 @@ background-image: url(happygf.png)
 ## **Chief Architect??? Really??**
 ???
 - I always knew you can do it!
-- My BF is CSA. It sounds sooo sexy!
-- Guess what happened next?
+- My BF is CSA. It'ssooo sexy!
 
 ---
 class: black, invert, center, middle
@@ -472,66 +471,62 @@ class: black, invert, center, middle
 class: fullscreen
 background-image:url(paperwork.jpg)
 ???
-- He didn’t code for about a year or two, doing mostly paper work, planning and sales. 
-- Led by old technologies forced by customer.
+- He didn’t code for 2 years – paper work, management, presales.
 - He forgot who he is and his craft.
-- He sent to a customer interview and failed drastically. 
+- He sent to a customer interview and failed drastically.
 
 ---
 class: fullscreen
 background-image:url(buttkick.jpg)
 ???
-- An interviewer, regular Java Developer kicked his butt. It was very easy coding exercise, with simple, but important questions. 
-- Johnny was telling how he will attack the simple problem with ESB, EJB, XSLT and WebSphere.
+- An interviewer, regular Java Developer kicked his butt.
+- He asked a question how Johnny would build a simple app – WebLogic, EJB, Oracle BPM and other bullshit.
 
 ---
 class: center, middle
-# It Doesn’t matter how “Senior” in the company you are. 
+# It Doesn’t matter how “Senior” in the company you are.
 ## It's a local measure.
 ???
 - Companies will promote you and pay well for things they need from you. Things that are important for them. More shitty things - more pay!
 - Never let any company make you blind and drive your career.
-- Many “hands-on” CTO can’t pass mid-level dev interview. Sounds funny, until you find yourself left aboard.
+- CTO that can't answer simple things. SHITIOS. No way back.
 
 ---
 class: center, middle
 # Validate your seniority against the rest of the industry.
 ???
+- Escape the box you are in
 - Attend interviews. I do few times a year, normally abroad
-- Start doing consulting! Free of charge.
-- Build projects that solves your daily problems. My NORDEA. Call it startup, call it pet project. Doesn't matter. If I can solve my problems, I can solve others.
-- My passive income. I haven't go to "normal work" for more than a year already.
+- Free consulting
+- PPP – for you or your friends
+
 
 ---
 class: center, middle
 # The only measure of seniority is your freedom.
 ???
-- Freedom to decide what to do, where, when, for what money and whether to do something at all. Everything else is secondary. 
+- Freedom to decide what to do, where, when, for what money and whether to do something at all. Everything else is secondary.
 - Stop complaining about less experience peers having more senior title. Stop racing for "titles". It doesn't matter. Freedom is what matters. Freedom will let you set whatever title you want.
 
 ---
 class: fullscreen
 background-image:url(happy.png)
 ???
-I do not know where Johnny is now, but I am pretty sure after lessons he took,he is in a good shape. 
+I do not know where Johnny is now, but I am pretty sure after lessons he learned, he is in a good shape.
 
 ---
-class: center, middle
-## Do what you feel in your heart to be right - you'll be criticized anyway. You'll be damned if you do, and damned if you don't
-### (c)
-???
-Always be professional. I wish you good luck and
-
----
-class: center, middle
+class: center, middle, invert, end
 # Thank you
+<div class="splash" style="font-size: 30px">
+  <img src="twitter.png"><small>@eduardsi</small>
+</div>
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create({ 
-            ratio: '16:9', 
-            slideNumberFormat: function (current, total) { return "" } 
+      var slideshow = remark.create({
+            ratio: '16:9',
+            slideNumberFormat: function (current, total) { return "" }
       });
     </script>
   </body>
